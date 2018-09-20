@@ -233,12 +233,6 @@
             }
             else if ($input[0].tagName === 'SELECT') {
                 error = this.validate.select($input);
-            }
-            else if(!$input.val()){
-                error = {
-                    type:"required",
-                    isNotValid : true
-                };
 
             } else if(inputType === "number" || inputType === "tel" || inputType === "text" || inputType === "password" || inputType === "date"){
                 error = this.validate.text($input);
